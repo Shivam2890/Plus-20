@@ -15,7 +15,7 @@ function mergeObjects(arr) {
             values: result[key]
         })
     }
-    console.log(ans)
+    return ans
 }
 
 // Test Case 1
