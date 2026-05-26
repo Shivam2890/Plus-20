@@ -1,11 +1,13 @@
 function camelToSnake(str) {
-    let arr = str.split("")
-    for (let ch of arr) {
-        if ("A" <= ch && ch <= "Z") {
-            console.log(ch)
+    let result = ""
+    for (let ch of str) {
+        if (ch >= "A" && ch <= "Z") {
+            result += "_" + ch.toLowerCase()
+        } else {
+            result += ch
         }
     }
-    // return arr
+    return result
 }
 console.log(
     camelToSnake("helloWorld")
